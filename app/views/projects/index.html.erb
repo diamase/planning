@@ -8,7 +8,7 @@
     <%= submit_tag "Search", :name => nil %>
   </p>
 <% end %>
- 
+
 <table>
 
   <tbody>
@@ -35,4 +35,6 @@
   <% if user_signed_in? %>
     <%= link_to 'New Project', new_project_path %>
   <% end %>
+  <%= render 'disqus' %>
+
 </div>
